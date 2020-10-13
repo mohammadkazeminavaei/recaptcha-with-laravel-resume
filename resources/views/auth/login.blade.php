@@ -1,8 +1,5 @@
 @extends('layouts.master')
 @section('title' , 'ورود')
-@section('scriptrecaptcha')
-<script src="https://www.google.com/recaptcha/api.js?hl=fa" async defer></script>
-@endsection
 @section('main')
 
                 <!-- Start Content -->
@@ -53,8 +50,7 @@
                                                 ورود به دیجی کالا
                                             </button>
                                         </div>
-                                        <div class="g-recaptcha form-footer text-right mt-3" data-sitekey="{{env('GOOGLE_RECAPTCHA_SITE_KEY')}}">
-                                        </div>
+                                        @recaptcha
                                     </form>
                                 </div>
                             </div>
